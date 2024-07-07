@@ -1,0 +1,21 @@
+
+.hover-navbar ul li:hover {
+  transform: translateY(-3px); 
+  transition: transform 0.3s ease;
+  
+
+}
+
+
+.hover-navbar ul li a {
+  color: #fff; 
+  text-decoration: none;
+  
+}
+
+
+.hover-navbar ul li a:hover {
+  
+  color : rgb(238, 74, 102); 
+
+}
