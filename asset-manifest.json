@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ff9713fc.css",
+    "main.js": "/static/js/main.7b3784f3.js",
+    "static/media/ExpenseTracker.png": "/static/media/ExpenseTracker.2a4c32baadaca8c87d6d.png",
+    "static/media/AnidoptionProject.png": "/static/media/AnidoptionProject.8b5aa97375e51e350dc4.png",
+    "static/media/EcomProject.png": "/static/media/EcomProject.732fd8fc4b42e4512f75.png",
+    "static/media/NetflixProject.png": "/static/media/NetflixProject.f8f50b65b8c2b7ad521e.png",
+    "index.html": "/index.html",
+    "main.ff9713fc.css.map": "/static/css/main.ff9713fc.css.map",
+    "main.7b3784f3.js.map": "/static/js/main.7b3784f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff9713fc.css",
+    "static/js/main.7b3784f3.js"
+  ]
+}
