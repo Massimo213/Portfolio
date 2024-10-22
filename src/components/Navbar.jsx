@@ -47,11 +47,7 @@ const Navbar = () => {
               Projects
             </Link>
           </li>
-          <li>
-            <Link to='/contact'>
-              Contact
-            </Link>
-          </li>
+          
         </ul>
      
 
@@ -82,11 +78,7 @@ const Navbar = () => {
             Projects
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='/contact'>
-            Contact
-          </Link>
-        </li>
+       
       </ul>
     </div>
 
@@ -120,7 +112,7 @@ const Navbar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#565f69]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='/|Resume|.pdf'
+              href='/MyResume(2.2) (3).pdf'
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>

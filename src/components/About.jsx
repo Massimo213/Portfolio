@@ -18,11 +18,7 @@ const About = () => {
               <p>Hello, I'm <i style={{ fontStyle: 'italic', color: 'pink' }}>Yahya Mounadi</i>, a seasoned <i style={{ fontStyle: 'italic', color: 'pink' }}>software developer</i> specializing in crafting robust digital solutions that bridge frontend elegance with backend resilience.</p>
             </div>
             <div> 
-              <p>I am passionate about building excellent software that improves
-              the lives of those around me. I specialize in creating software
-              for clients ranging from individuals and small-businesses all the
-              way to large enterprise corporations. What would you do if you had
-              a software expert available at your fingertips?</p>  
+              <p>Beyond my expertise in full-stack development, I have a profound interest and passion for business, particularly in starting ventures from scratch. I thrive on the challenges and opportunities that come with building a business from the ground up, whether it's creating innovative solutions or finding unique market opportunities.</p>  
             </div>
           </div>
           <div className='mt-8 text-center text-lg italic py-13 '>

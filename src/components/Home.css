@@ -17,6 +17,14 @@
   object-fit: cover;
 }
 
+/* Hide the image when the screen width is less than 768px (for mobile screens) */
+@media screen and (max-width: 768px) {
+  .hidden-on-mobile {
+    display: none;
+  }
+}
+
+
 
 
 .background-animation {

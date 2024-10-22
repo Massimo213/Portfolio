@@ -44,11 +44,8 @@ const Footer = () => {
         <li className="menu__item">
           <a className="menu__link" href="/about">About me</a>
         </li>
-        <li className="menu__item">
-          <a className="menu__link" href="/contact">Contact</a>
-        </li>
       </ul>
-      <p>&copy;2021 Yahya Mounadi | All Rights Reserved</p>
+      <p>&copy;2024 Yahya Mounadi | All Rights Reserved</p>
     </footer>
   );
 };
