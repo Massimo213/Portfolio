@@ -1,150 +1,71 @@
 import React from "react";
-
 import p1 from '../Assets/NetflixProject.png'
-import p2 from'../Assets/EcomProject.png'
+import p2 from '../Assets/EcomProject.png'
 import p3 from '../Assets/ExpenseTracker.png'
-import p4 from'../Assets/AnidoptionProject.png'
-import p5 from  '../Assets/Horizon.png'
-import p6 from   '../Assets/Zidouri.png'
-
-import Footer from "./Footer";
+import p4 from '../Assets/AnidoptionProject.png'
+import p5 from '../Assets/Horizon.png'
+import p6 from '../Assets/Zidou.png'
+import p7 from '../Assets/Elystralogo.png'
+import './Project.css'
 
 export default function Projects() {
+  const projects = [
+    { image: p7, title: "Elystra AI Email Software", link: "https://github.com/Massimo213/email-app" },
+    { image: p5, title: "Horizon SAAS Platform", link: "https://github.com/Massimo213/banking" },
+    { image: p6, title: "Rabia : A Next-Gen Ecommerce Experience", link: "https://github.com/Massimo213/Rabia-Ecommerce.git" },
+    { image: p1, title: "Netflix Clone Application", link: "https://github.com/Massimo213/Netflix-Clone" },
+    { image: p2, title: "E-commerce Art Gallery - Uranus -", link: "https://github.com/Massimo213/Uranus-Art-Gallery-Website" },
+    { image: p3, title: 'Financial Record Application "Expensify"', link: "https://github.com/Massimo213/Budget_Tracker" },
+    { image: p4, title: 'Adoption Application "Anidoption"', link: "https://github.com/Massimo213/Anidoption-Full-stack-Project-" },
+  ];
+
   return (
-    <div className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
-            Projects
-          </p>
-          <p className="py-6">
-            Here You will be able to take a look at some of my Projects
+    <div className="w-full bg-[#0a192f] text-gray-300 py-20 px-5">
+      <div className="max-w-[1200px] mx-auto">
+        
+        {/* Header Section */}
+        <div className="text-left pb-8 flex flex-col items-start">
+          <h1 className="text-4xl sm:text-6xl font-extrabold inline-block border-b-4 border-pink-500 relative moving-text">
+            {Array.from("Projects").map((letter, index) => (
+              <span
+                key={index}
+                className="inline-block transform transition-all duration-300 hover:text-pink-500 hover:scale-125 moving-letter"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                {letter}
+              </span>
+            ))}
+          </h1>
+          <p className="text-xl text-gray-300 py-4">
+            Here you will find some of my best projects showcasing my development skills.
           </p>
         </div>
 
-{/** Horizon SAAS Platform */}
-
-
-
-
-
-
-
-
-
-
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-
-{/** Horizon SAAS Platform */}
-<div  style={{backgroundImage:`url(${p5})`}}className="shadow-lg shadow-[#040c16] group container rounded-md 
-              flex justify-center text-center items-center mx-auto content-div">
-{/*Hover Effect */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font bold text-white tracking-wider ">
-Horizon SAAS Platform
-              </span>
-              <div>
-                
-                <a href="https://github.com/Massimo213/banking">
-                  <button className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg hover:bg-gray-700 hover:text-white hover:shadow-lg
-                       transition duration-300 ease-in-out">Code</button>
-                </a>
+        {/* Projects Grid */}
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+          {projects.map((project, index) => (
+            <div key={index} className="relative group overflow-hidden rounded-xl shadow-lg transition-transform duration-500 transform hover:scale-105 hover:shadow-pink-500/50 project-card">
+              
+              {/* Project Image */}
+              <div 
+                className="relative w-full h-[280px] bg-cover bg-center rounded-lg transition-all duration-500 hover:rotate-2 hover:shadow-lg"
+                style={{ backgroundImage: `url(${project.image})` }}
+              >
+                {/* Hover Effect */}
+                <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-all duration-500 backdrop-blur-md">
+                  <h2 className="text-2xl font-bold text-white tracking-wide text-center">{project.title}</h2>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <button className="mt-3 px-6 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold rounded-lg shadow-lg hover:shadow-pink-500/50 transform transition-all duration-300 hover:scale-110">
+                      View Code 🚀
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div  style={{backgroundImage:`url(${p6})`}}className="shadow-lg shadow-[#040c16] group container rounded-md 
-              flex justify-center text-center items-center mx-auto content-div">
-{/*Hover Effect */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font bold text-white tracking-wider ">
-              Rabia : A Next-Gen Ecommerce Experienc
-              </span>
-              <div>
-                
-                <a href="https://github.com/Massimo213/Rabia-Ecommerce.git">
-                  <button className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg hover:bg-gray-700 hover:text-white hover:shadow-lg
-                       transition duration-300 ease-in-out">Code</button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div  style={{backgroundImage:`url(${p1})`}}className="shadow-lg shadow-[#040c16] group container rounded-md 
-              flex justify-center text-center items-center mx-auto content-div">
-{/*Hover Effect */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font bold text-white tracking-wider ">
-Netflix Clone Application
-              </span>
-              <div>
-                
-                <a href="https://github.com/Massimo213/Netflix-Clone">
-                  <button className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg hover:bg-gray-700 hover:text-white hover:shadow-lg
-                       transition duration-300 ease-in-out">Code</button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div  style={{backgroundImage:`url(${p2})`}}className="shadow-lg shadow-[#040c16] group container rounded-md 
-              flex justify-center text-center items-center mx-auto content-div">
-{/*Hover Effect */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font bold text-white tracking-wider ">
-E-commerce Art Gallery -Uranus-
-              </span>
-              <div>
-                
-                <a href="https://github.com/Massimo213/Uranus-Art-Gallery-Website">
-                  <button className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg hover:bg-gray-700 hover:text-white hover:shadow-lg
-                       transition duration-300 ease-in-out">Code</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div  style={{backgroundImage:`url(${p3})`}}className="shadow-lg shadow-[#040c16] group container rounded-md 
-              flex justify-center text-center items-center mx-auto content-div">
-{/*Hover Effect */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font bold text-white tracking-wider ">
-Financial Record Application "Expensify"
-              </span>
-              <div>
-                
-                <a href="https://github.com/Massimo213/Budget_Tracker">
-                  <button className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg hover:bg-gray-700 hover:text-white hover:shadow-lg
-                       transition duration-300 ease-in-out">Code</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div  style={{backgroundImage:`url(${p4})`}}className="shadow-lg shadow-[#040c16] group container rounded-md 
-              flex justify-center text-center items-center mx-auto content-div">
-{/*Hover Effect */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font bold text-white tracking-wider ">
-Adoption Application "Anidoption"
-              </span>
-              <div>
-                
-                <a href='https://github.com/Massimo213/Anidoption-Full-stack-Project-'>
-                  <button className="text-center rounded-lg px-4 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg hover:bg-gray-700 hover:text-white hover:shadow-lg
-                       transition duration-300 ease-in-out">Code</button>
-                </a>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
+
       </div>
-      <Footer/>
     </div>
   );
 }

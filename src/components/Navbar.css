@@ -19,3 +19,16 @@
   color : rgb(238, 74, 102); 
 
 }
+/* Social Icon Sidebar */
+
+
+/* Glowing Navbar */
+nav {
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Hover Underline Effect */
+.group:hover span {
+  width: 100%;
+  transition: width 0.3s ease-in-out;
+}
